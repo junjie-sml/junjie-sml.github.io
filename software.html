@@ -1,0 +1,206 @@
+<!--
+Author: W3layouts (modified by Junjie Tang)
+License: Creative Commons Attribution 3.0 Unported
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Junjie Tang | Software</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Junjie Tang, Computational Neuroscience, Spatial Omics, Software, Code" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<link href="css/animate.min.css" rel="stylesheet"> 
+<script src="js/wow.min.js"></script>
+<script> new WOW().init(); </script>
+<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<!-- header -->
+<div class="header">
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="logo">
+          <h1><a class="navbar-brand" href="index.html">Junjie Tang</a></h1>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse nav-wil" id="nav-collapse">
+        <nav class="menu menu--francisco">
+          <ul class="nav navbar-nav menu__list">
+            <li class="menu__item"><a href="index.html" class="menu__link"><span class="menu__helper">About</span></a></li>
+            <li class="menu__item"><a href="research.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
+            <li class="menu__item"><a href="publications.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
+            <li class="menu__item"><a href="images/CV Tang 2023.pdf" class="menu__link" target="_blank"><span class="menu__helper">CV</span></a></li>
+            <li class="menu__item menu__item--current"><a href="software.html" class="menu__link"><span class="menu__helper">Software</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- //header -->
+
+<!-- banner -->
+<div class="banner1">
+  <div class="container">
+    <h2 class="animated wow slideInLeft" data-wow-delay="0s"><a href="index.html">About</a> / <span>Software</span></h2>
+  </div>
+</div>
+<!-- //banner -->
+
+<!-- software -->
+<div class="about">
+  <div class="container">
+    <h3 class="animated wow zoomIn" data-wow-delay="0s">Software & Tools</h3>
+    <p class="panel-body panel_text" data-wow-delay="0s">
+      Open-source computational frameworks and analytical tools developed for understanding spatial omics, multiscale interactions, and social neuroscience.
+    </p>
+
+    <div class="about-grids">
+      <div class="col-md-6 about-grids-left">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          
+          <!-- SpiderNet -->
+          <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sub" role="tab" id="headingOne">
+              <h4 class="panel-title asd">
+                <a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                  <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+                  SpiderNet
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body panel_text">
+                <b>SpiderNet</b> is an interpretable deep learning framework that infers directional cell–cell meta-interactions from spatial transcriptomics data.  
+                It integrates <i>graph neural networks</i>, <i>non-negative factorization</i>, and <i>attention-based mechanisms</i> to reveal multiscale communication structures within tissues.<br><br>
+                [<a href="https://github.com/junjie-sml/SpiderNet" target="_blank">GitHub</a>] [<a href="#">Documentation</a>]
+              </div>
+            </div>
+          </div>
+
+          <!-- SpaHDmap -->
+          <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sub" role="tab" id="headingTwo">
+              <h4 class="panel-title asd">
+                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                  <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+                  SpaHDmap
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body panel_text">
+                <b>SpaHDmap</b> performs interpretable high-resolution dimensionality reduction for spatial transcriptomics.  
+                It aligns biological activity patterns with spatial context, enabling fine-grained visualization and feature interpretation.<br><br>
+                [<a href="https://github.com/junjie-sml/SpaHDmap" target="_blank">GitHub</a>] [<a href="#">Preprint</a>]
+              </div>
+            </div>
+          </div>
+
+          <!-- CellFlowMap -->
+          <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sub" role="tab" id="headingThree">
+              <h4 class="panel-title asd">
+                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                  <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+                  CellFlowMap
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body panel_text">
+                <b>CellFlowMap</b> is a temporal extension of SpiderNet designed to model dynamic cell–cell communication flow and perturbation effects across time points.<br><br>
+                [<a href="https://github.com/junjie-sml/CellFlowMap" target="_blank">GitHub</a>]
+              </div>
+            </div>
+          </div>
+
+          <!-- SOAR-X -->
+          <div class="panel panel-default">
+            <div class="panel-heading panel-heading-sub" role="tab" id="headingFour">
+              <h4 class="panel-title asd">
+                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                  <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
+                  SOAR-X
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body panel_text">
+                <b>SOAR-X (Spatial Omics Attention-based Representation with eXplainability)</b>  
+                is a self-supervised attention model that decomposes cell interactions into intrinsic, local, and global components, providing biologically interpretable embeddings.<br><br>
+                [<a href="https://github.com/junjie-sml/SOAR-X" target="_blank">GitHub</a>]
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+        <img src="images/software_banner.jpg" alt="Software Overview" class="img-responsive" />
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+<!-- //software -->
+
+<!-- footer -->
+<div class="footer"><a name="CONTACT"></a>
+  <div class="container">
+    <div class="footer-grids">
+      <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:junjieta@andrew.cmu.edu">junjieta@andrew.cmu.edu</a></p>
+        <div class="social">
+          <ul class="social-nav model-8">
+            <li><a href="https://github.com/junjie-sml" class="github"><i> </i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".03s">
+        <br><br><br>
+        <p>Carnegie Mellon University</p>
+        <p>Pittsburgh, PA, USA</p>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+    <div class="footer-grids1">
+      <div class="footer-grids1-left animated wow slideInLeft">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="menu__item"><a href="images/CV Tang 2023.pdf" class="menu__link" target="_blank"><span class="menu__helper">CV</span></a></li>
+          <li class="active"><a href="software.html">Software</a></li>
+        </ul>
+      </div>
+      <div class="footer-grids1-right">
+        <p class="animated wow slideInRight" data-wow-delay=".01s">© 2025 Junjie Tang | Design adapted from <a href="http://w3layouts.com/">W3layouts</a></p>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">$(document).ready(function(){$().UItoTop({easingType:'easeOutQuart'});});</script>
+</body>
+</html>
