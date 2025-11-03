@@ -12,11 +12,18 @@ License: Creative Commons Attribution 3.0 Unported
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<link href="css/animate.min.css" rel="stylesheet"> 
+<link href="css/animate.min.css" rel="stylesheet">
 <script src="js/wow.min.js"></script>
 <script> new WOW().init(); </script>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<style>
+  /* Small tweaks for cleaner lists */
+  .pub-list { list-style: none; padding-left: 0; margin-bottom: 10px; }
+  .pub-list li { margin-bottom: 10px; }
+  .pub-links a { margin-right: 10px; }
+  .year-tag { margin-top: 25px; }
+</style>
 </head>
 
 <body>
@@ -65,57 +72,68 @@ License: Creative Commons Attribution 3.0 Unported
   <div class="container">
     <h3 class="animated wow zoomIn" data-wow-delay="0s">Publications</h3>
     <p class="panel-body panel_text" data-wow-delay="0s">
-      Selected works categorized by publication year.
+      Selected works grouped by year. <span style="opacity:.7">(* equal contribution where applicable)</span>
     </p>
 
     <!-- 2025 -->
-    <h4 class="animated wow fadeInUp" data-wow-delay="0.1s"><b>2025</b></h4>
-    <ul class="panel-body panel_text" style="list-style-type:none; padding-left:0;">
+    <h4 id="y2025" class="year-tag animated wow fadeInUp" data-wow-delay="0.1s"><b>2025</b></h4>
+    <ul class="panel-body panel_text pub-list">
       <li>
-        <b>Junjie Tang</b>*, A. Doe*, B. Smith et al. (2025). 
-        <i>Interpretable high-resolution dimension reduction of spatial transcriptomics data by SpaHDmap.</i> 
-        <em>bioRxiv</em>. 
-        [<a href="#">PDF</a>] [<a href="#">Code</a>]
-      </li><br>
-
+        Chen, X., Ran, Q., <b>Tang, J.</b>, Chen, Z., Huang, S., Shi, X., Xi, R. (2025).
+        <i>Benchmarking algorithms for spatially variable gene identification in spatial transcriptomics.</i>
+        <em>Bioinformatics</em>, 41(4): btaf131.
+        <span class="pub-links">[<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">DOI</a>] [<a href="#" target="_blank">Code</a>]</span>
+      </li>
       <li>
-        <b>Junjie Tang</b>, B. Smith, C. Lee et al. (2025). 
-        <i>Social preference-weighted learning in adolescence.</i> 
-        <em>In preparation</em>.
-      </li><br>
+        Liang, S., <b>Tang, J.</b>, Wang, G., Ma, J. (2025).
+        <i>Steamboat: Attention-based multiscale delineation of cellular interactions in tissues.</i>
+        In <em>International Conference on Research in Computational Molecular Biology (RECOMB)</em>, pp. 432–436.
+        <span class="pub-links">[<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">DOI</a>] [<a href="#" target="_blank">Code</a>]</span>
+      </li>
+      <li>
+        Huang, Y., Wang, C., <b>Tang, J.</b>, Wu, W., Xi, R. (2025).
+        <i>A Generic Family of Graphical Models: Diversity, Efficiency, and Heterogeneity.</i>
+        In <em>Forty-second International Conference on Machine Learning (ICML)</em>.
+        <span class="pub-links">[<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">DOI</a>] [<a href="#" target="_blank">Code</a>]</span>
+      </li>
     </ul>
 
     <!-- 2024 -->
-    <h4 class="animated wow fadeInUp" data-wow-delay="0.2s"><b>2024</b></h4>
-    <ul class="panel-body panel_text" style="list-style-type:none; padding-left:0;">
+    <h4 id="y2024" class="year-tag animated wow fadeInUp" data-wow-delay="0.15s"><b>2024</b></h4>
+    <ul class="panel-body panel_text pub-list">
       <li>
-        <b>Junjie Tang</b>, X. Zhao, Y. Chen et al. (2024). 
-        <i>Interpretable graph neural networks reveal multiscale cellular communication in human tumors.</i> 
-        <em>Nature Methods</em> (under review).
-      </li><br>
-
+        Huang, S., Ouyang, L., <b>Tang, J.</b>, Qian, K., Chen, X., Xu, Z., Ming, J., Xi, R. (2024).
+        <i>Spatial transcriptomics: a new frontier in cancer research.</i>
+        <em>Clinical Cancer Bulletin</em>, 3(1): 13.
+        <span class="pub-links">[<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">DOI</a>]</span>
+      </li>
       <li>
-        <b>Junjie Tang</b>, D. Wang, and K. Liu (2024). 
-        <i>Decoding social prediction errors in the adolescent brain.</i> 
-        <em>Nature Neuroscience</em> (submitted).
-      </li><br>
-    </ul>
-
-    <!-- Earlier works -->
-    <h4 class="animated wow fadeInUp" data-wow-delay="0.3s"><b>Earlier Works</b></h4>
-    <ul class="panel-body panel_text" style="list-style-type:none; padding-left:0;">
+        <b>Tang, J.</b>, Wang, C., Xiao, F., Xi, R. (2024).
+        <i>Single-cell gene regulatory network analysis for mixed cell populations.</i>
+        <em>Quantitative Biology</em>, 12(4): 375–388.
+        <span class="pub-links">[<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">DOI</a>] [<a href="#" target="_blank">Code</a>]</span>
+      </li>
       <li>
-        <b>Junjie Tang</b>, Z. Li, and Y. Zhang (2023). 
-        <i>Hierarchical spatial modeling for cellular organization in tissues.</i> 
-        <em>bioRxiv</em>.
-      </li><br>
-
-      <li>
-        <b>Junjie Tang</b> and S. Liu (2022). 
-        <i>Computational models of cooperation under uncertainty.</i> 
-        <em>Frontiers in Psychology</em>.
+        <b>Tang, J.</b>, Chen, Z., Qian, K., Huang, S., Yin, S., He, Y., He, X., Ye, B., Zhuang, Y., Meng, H., <i>et al.</i> (2024).
+        <i>Interpretable high-resolution dimension reduction of spatial transcriptomics data by DeepFuseNMF.</i>
+        <em>bioRxiv</em> (preprint).
+        <span class="pub-links">[<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">bioRxiv</a>] [<a href="#" target="_blank">Code</a>]</span>
       </li>
     </ul>
+
+    <!-- 2022 -->
+    <h4 id="y2022" class="year-tag animated wow fadeInUp" data-wow-delay="0.2s"><b>2022</b></h4>
+    <ul class="panel-body panel_text pub-list">
+      <li>
+        Xiao, F., <b>Tang, J.</b>, Fang, H., Xi, R. (2022).
+        <i>Estimating graphical models for count data with applications to single-cell gene network.</i>
+        <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 35: 29038–29050.
+        <span class="pub-links">[<a href="#" target="_blank">PDF</a>] [<a href="#" target="_blank">OpenReview/DOI</a>] [<a href="#" target="_blank">Code</a>]</span>
+      </li>
+    </ul>
+
+    <!-- Earlier works (optional placeholder if you want to add more) -->
+    <!-- <h4 class="year-tag animated wow fadeInUp"><b>Earlier Works</b></h4> -->
   </div>
 </div>
 <!-- //publications -->
@@ -146,7 +164,7 @@ License: Creative Commons Attribution 3.0 Unported
           <li><a href="index.html">About</a></li>
           <li><a href="research.html">Research</a></li>
           <li class="active"><a href="publications.html">Publications</a></li>
-          <li><a href="images/CV Tang 2023.pdf">CV</a></li>
+          <li><a href="images/CV Tang 2023.pdf" target="_blank">CV</a></li>
           <li><a href="software.html">Software</a></li>
         </ul>
       </div>
@@ -159,9 +177,10 @@ License: Creative Commons Attribution 3.0 Unported
 </div>
 
 <script src="js/bootstrap.js"></script>
-<script type="text/javascript">$(document).ready(function(){$().UItoTop({easingType:'easeOutQuart'});});</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $().UItoTop({easingType:'easeOutQuart'});
+  });
+</script>
 </body>
 </html>
-
-
-
