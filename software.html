@@ -17,6 +17,12 @@ License: Creative Commons Attribution 3.0 Unported
 <script> new WOW().init(); </script>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<style>
+  /* 可选：让导航菜单居中（不需要可删除这三行） */
+  .navbar .nav-wil { width: 100%; }
+  .navbar .menu__list { float: none; text-align: center; }
+  .navbar .menu__list > li { float: none; display: inline-block; }
+</style>
 </head>
 
 <body>
@@ -31,9 +37,7 @@ License: Creative Commons Attribution 3.0 Unported
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="logo">
-          <h1><a class="navbar-brand" href="index.html">Junjie Tang</a></h1>
-        </div>
+        <!-- 已移除左上角品牌块（Junjie Tang） -->
       </div>
 
       <div class="collapse navbar-collapse nav-wil" id="nav-collapse">
@@ -188,7 +192,7 @@ License: Creative Commons Attribution 3.0 Unported
           <li><a href="index.html">About</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="publications.html">Publications</a></li>
-          <li class="menu__item"><a href="images/CV Tang 2023.pdf" class="menu__link" target="_blank"><span class="menu__helper">CV</span></a></li>
+          <li><a href="images/CV Tang 2023.pdf" target="_blank">CV</a></li>
           <li class="active"><a href="software.html">Software</a></li>
         </ul>
       </div>
@@ -201,6 +205,10 @@ License: Creative Commons Attribution 3.0 Unported
 </div>
 
 <script src="js/bootstrap.js"></script>
-<script type="text/javascript">$(document).ready(function(){$().UItoTop({easingType:'easeOutQuart'});});</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $().UItoTop({easingType:'easeOutQuart'});
+  });
+</script>
 </body>
 </html>
