@@ -5,23 +5,32 @@ License: Creative Commons Attribution 3.0 Unported
 <!DOCTYPE html>
 <html>
 <head>
-<title>Junjie Tang</title>
+<title>Junjie Tang | About</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Junjie Tang, Computational Neuroscience, Spatial Omics" />
+<meta name="keywords" content="Junjie Tang, Computational Neuroscience, Spatial Omics, About" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<link href="css/animate.min.css" rel="stylesheet"> 
+<link href="css/animate.min.css" rel="stylesheet">
 <script src="js/wow.min.js"></script>
 <script> new WOW().init(); </script>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <style>
-  /* 可选：让导航菜单居中对齐 */
+  /* Alignment consistent with publications page */
   .navbar .nav-wil { width: 100%; }
   .navbar .menu__list { float: none; text-align: center; }
   .navbar .menu__list > li { float: none; display: inline-block; }
+
+  .about .panel_text { font-size: 15px; line-height: 1.8em; }
+  .about h3 { margin-bottom: 25px; }
+
+  .banner1 h2 { font-size: 22px; color: #fff; }
+  .banner1 a { color: #fff; text-decoration: none; }
+  .banner1 i { font-style: italic; }
+
+  .footer-grids1 ul li a:hover { text-decoration: underline; }
 </style>
 </head>
 
@@ -37,7 +46,6 @@ License: Creative Commons Attribution 3.0 Unported
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!-- 已移除左上角品牌块（Junjie Tang） -->
       </div>
 
       <div class="collapse navbar-collapse nav-wil" id="nav-collapse">
@@ -45,7 +53,7 @@ License: Creative Commons Attribution 3.0 Unported
           <ul class="nav navbar-nav menu__list">
             <li class="menu__item menu__item--current"><a href="index.html" class="menu__link"><span class="menu__helper">About</span></a></li>
             <li class="menu__item"><a href="research.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
-            <li class="menu__item"><a href="publication.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
+            <li class="menu__item"><a href="publications.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
             <li class="menu__item"><a href="images/CV Tang 2023.pdf" class="menu__link" target="_blank"><span class="menu__helper">CV</span></a></li>
             <li class="menu__item"><a href="software.html" class="menu__link"><span class="menu__helper">Software</span></a></li>
           </ul>
@@ -59,7 +67,7 @@ License: Creative Commons Attribution 3.0 Unported
 <!-- banner -->
 <div class="banner1">
   <div class="container">
-    <h2 class="animated wow slideInLeft"><a href="index.html"><i>“Science is the art of making sense of complexity.”</i></a></h2>
+    <h2 class="animated wow slideInLeft" data-wow-delay="0s"><a href="index.html"><i>"Science is the art of making sense of complexity."</i></a></h2>
   </div>
 </div>
 <!-- //banner -->
@@ -67,6 +75,7 @@ License: Creative Commons Attribution 3.0 Unported
 <!-- about -->
 <div class="about">
   <div class="container">
+    <h3 class="animated wow zoomIn" data-wow-delay="0s">About Me</h3>
     <div class="about-grids">
       <div class="col-md-6 about-grids-left">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -74,10 +83,11 @@ License: Creative Commons Attribution 3.0 Unported
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
               <div class="panel-body panel_text"> 
                 <font size="4">
-                  Hello! I am <b>Junjie Tang (唐俊杰)</b>. I am a postdoctoral researcher at <b>Carnegie Mellon University</b>.
-                  My research focuses on developing interpretable computational models to understand how intercellular communication organizes tissue structure and how neural systems support social decision-making in the human brain.<br><br>
-                  I received my PhD in Computational Biology and Neuroscience, and my work bridges machine learning, spatial transcriptomics, and social neuroscience.<br><br>
-                  Outside research, I enjoy photography, cooking, traveling, and exploring new cultures. Feel free to reach out if you’d like to connect!<br><br>
+                  Hello! I am <b>Junjie Tang (唐俊杰)</b>, a postdoctoral researcher at <b>Carnegie Mellon University</b>.<br><br>
+                  My research focuses on developing interpretable computational models to understand how <b>intercellular communication organizes tissue structure</b> and how <b>neural systems support social decision-making</b> in the human brain.<br><br>
+                  I received my PhD in Computational Biology and Neuroscience, and my work bridges <b>machine learning, spatial transcriptomics, and social neuroscience</b>.<br><br>
+                  Outside research, I enjoy photography, cooking, traveling, and exploring new cultures.  
+                  Feel free to reach out if you’d like to connect!<br><br>
                 </font>
               </div>
             </div>
@@ -97,7 +107,7 @@ License: Creative Commons Attribution 3.0 Unported
 <div class="footer"><a name="CONTACT"></a>
   <div class="container">
     <div class="footer-grids">
-      <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay="0s">
+      <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
         <h3>Contact</h3>
         <p>Email: <a href="mailto:junjieta@andrew.cmu.edu">junjieta@andrew.cmu.edu</a></p>
         <div class="social">
@@ -106,25 +116,26 @@ License: Creative Commons Attribution 3.0 Unported
           </ul>
         </div>
       </div>
-      <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".01s">
+      <div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".03s">
         <br><br><br>
         <p>Carnegie Mellon University</p>
         <p>Pittsburgh, PA, USA</p>
       </div>
       <div class="clearfix"> </div>
     </div>
+
     <div class="footer-grids1">
       <div class="footer-grids1-left animated wow slideInLeft">
         <ul>
           <li class="active"><a href="index.html">About</a></li>
           <li><a href="research.html">Research</a></li>
-          <li><a href="publication.html">Publications</a></li>
-          <li><a href="images/CV Tang 2023.pdf">CV</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="images/CV Tang 2023.pdf" target="_blank">CV</a></li>
           <li><a href="software.html">Software</a></li>
         </ul>
       </div>
       <div class="footer-grids1-right">
-        <p class="animated wow slideInRight" data-wow-delay="0s">© 2025 Junjie Tang | Design adapted from <a href="http://w3layouts.com/">W3layouts</a></p>
+        <p class="animated wow slideInRight" data-wow-delay=".01s">© 2025 Junjie Tang | Design adapted from <a href="http://w3layouts.com/">W3layouts</a></p>
       </div>
       <div class="clearfix"> </div>
     </div>
