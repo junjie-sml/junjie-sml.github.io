@@ -8,20 +8,23 @@ License: Creative Commons Attribution 3.0 Unported
 <title>Junjie Tang | Research</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Junjie Tang, Computational Neuroscience, Spatial Omics, Research" />
+<meta name="keywords" content="Junjie Tang, Computational Biology, Spatial Omics, Graphical Models, Research" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<link href="css/animate.min.css" rel="stylesheet"> 
+<link href="css/animate.min.css" rel="stylesheet">
 <script src="js/wow.min.js"></script>
 <script> new WOW().init(); </script>
 <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <style>
-  /* 可选：让导航菜单居中（不需要可删除这三行） */
   .navbar .nav-wil { width: 100%; }
   .navbar .menu__list { float: none; text-align: center; }
   .navbar .menu__list > li { float: none; display: inline-block; }
+  .research-section { margin-bottom: 48px; }
+  .research-section h3 { font-weight: 700; margin-bottom: 12px; }
+  .research-section p { text-align: justify; line-height: 1.8; margin-bottom: 10px; }
+  .lead-intro { margin-bottom: 28px; }
 </style>
 </head>
 
@@ -37,7 +40,6 @@ License: Creative Commons Attribution 3.0 Unported
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <!-- 已移除左上角品牌块（Junjie Tang） -->
       </div>
       <div class="collapse navbar-collapse nav-wil" id="nav-collapse">
         <nav class="menu menu--francisco">
@@ -63,78 +65,52 @@ License: Creative Commons Attribution 3.0 Unported
 </div>
 <!-- //banner -->
 
-<!-- about -->
+<!-- content -->
 <div class="about">
   <div class="container">
-    <p class="qui animated wow zoomIn" data-wow-delay="0s">
-      My research integrates computational neuroscience and spatial omics to understand how biological systems organize and communicate across scales.
+
+    <p class="qui lead-intro animated wow zoomIn" data-wow-delay="0s">
+      My research seeks a mechanistic understanding of how molecular programs, cells, and tissues organize and communicate. I pursue this through interpretable statistical modeling and graph-based machine learning across single-cell and spatial omics.
     </p>
 
     <div class="about-grids">
-      <div class="col-md-6 about-grids-left">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="col-md-7 about-grids-left">
 
-          <div class="panel panel-default">
-            <div class="panel-heading panel-heading-sub" role="tab" id="headingOne">
-              <h4 class="panel-title asd">
-                <a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                  <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
-                  Interpretable Models for Spatial Omics & Tissue Organization
-                </a>
-              </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body panel_text">
-                We develop interpretable graph-based models to infer directional cell–cell communication networks and identify multiscale spatial modules that shape tissue structure and function.
-              </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading panel-heading-sub" role="tab" id="headingTwo">
-              <h4 class="panel-title asd">
-                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                  <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
-                  Computational Modeling of Social Decision-Making
-                </a>
-              </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body panel_text">
-                We investigate how people learn and make social decisions by integrating reinforcement learning, social preference modeling, and neuroimaging (fMRI). Our models aim to explain individual differences in prosocial behavior and cognitive flexibility.
-              </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default">
-            <div class="panel-heading panel-heading-sub" role="tab" id="headingThree">
-              <h4 class="panel-title asd">
-                <a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-                  <i class="glyphicon glyphicon-menu-up" aria-hidden="true"></i>
-                  Graph Neural Networks for Multiscale Biological Interactions
-                </a>
-              </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body panel_text">
-                We employ graph neural networks (GNNs) and attention-based architectures to capture hierarchical patterns of biological interactions, from single-cell communication to tissue-level coordination.
-              </div>
-            </div>
-          </div>
-
+        <!-- (1) Graphical model and application to GRN inference in scRNA-seq -->
+        <div class="research-section animated wow fadeInUp" data-wow-delay="0s">
+          <h3>1. Graphical models and gene regulatory inference in scRNA-seq data</h3>
+          <p>
+            Single-cell RNA-seq provides a discrete, sparse, and heterogeneous view of gene expression at cellular resolution, yet the biological questions hinge on identifying <em>direct</em> regulatory dependencies rather than broad associations. My work focuses on principled graphical formulations that are faithful to count-based sampling while remaining scalable in high dimensions and robust to mixed cell populations. By aligning model structure with the statistics of single-cell data, these approaches recover precision-matrix structure that reflects putative regulatory interactions across and within cell types, enabling clearer separation of direct from indirect effects and offering a more reliable substrate for downstream network biology.
+          </p>
         </div>
+
+        <!-- (2) Super-resolution interpretable embedding learning for ST -->
+        <div class="research-section animated wow fadeInUp" data-wow-delay=".1s">
+          <h3>2. Super-resolution interpretable embedding learning for spatial transcriptomics</h3>
+          <p>
+            Spatial transcriptomics links gene expression to tissue architecture, but practical measurements suffer from limited spatial resolution and substantial noise. I develop embedding formulations that preserve spatial coherence and biological meaning while enhancing effective resolution. The goal is not only to produce compact representations, but to make the “axes” of the embedding legible—connecting each latent dimension to interpretable gene programs and spatial patterns that refine tissue micro-organization. This perspective turns dimensionality reduction into a tool for reading out biologically grounded structure from noisy spatial assays and diverse histology contexts.
+          </p>
+        </div>
+
+        <!-- (3) Intercellular functional interaction module inference for ST -->
+        <div class="research-section animated wow fadeInUp" data-wow-delay=".2s">
+          <h3>3. Intercellular functional interaction module inference for spatial transcriptomics</h3>
+          <p>
+            Multicellular behavior emerges from coordinated, directional communication that extends far beyond isolated ligand–receptor pairs. I study cell–cell signaling as <em>modules</em> that link upstream regulators, signaling bridges, and downstream targets into compact programs that act across space and across cell types. Modeling communication in this modular, pathway-aligned way reveals multi-hop cascades, clarifies how local exchanges scale to tissue-level phenotypes, and supports hypothesis-driven comparisons and <em>in silico</em> perturbations. The emphasis is on interpretability and directional structure, so that inferred modules can be read as mechanistic hypotheses about how tissues change state in development and disease.
+          </p>
+        </div>
+
       </div>
-      <div class="col-md-6 about-grids-right animated wow slideInRight" data-wow-delay="0s">
-        <img src="images/research_img.jpg" alt="Research Image" class="img-responsive" />
+
+      <div class="col-md-5 about-grids-right animated wow slideInRight" data-wow-delay="0s">
+        <img src="images/research_img.jpg" alt="Research" class="img-responsive" />
       </div>
+
       <div class="clearfix"> </div>
     </div>
   </div>
 </div>
-<!-- //about -->
+<!-- //content -->
 
 <!-- footer -->
 <div class="footer"><a name="CONTACT"></a>
@@ -156,6 +132,7 @@ License: Creative Commons Attribution 3.0 Unported
       </div>
       <div class="clearfix"> </div>
     </div>
+
     <div class="footer-grids1">
       <div class="footer-grids1-left animated wow slideInLeft">
         <ul>
