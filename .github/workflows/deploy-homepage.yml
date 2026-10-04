@@ -1,0 +1,51 @@
+name: Publish approved homepage
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - Junjie-Tang-homepage-release.zip
+      - .github/workflows/deploy-homepage.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Set up Pages
+        uses: actions/configure-pages@v5
+      - name: Extract approved static website
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          target = Path('_site').resolve()
+          with zipfile.ZipFile('Junjie-Tang-homepage-release.zip') as archive:
+              for entry in archive.infolist():
+                  destination = (target / entry.filename).resolve()
+                  if not destination.is_relative_to(target):
+                      raise ValueError('Invalid archive path')
+              archive.extractall(target)
+          assert (target / 'index.html').is_file()
+          PY
+      - name: Upload website artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
